@@ -163,7 +163,6 @@
 					type="file"
 					:multiple="multipleFiles ? true : null"
 					:accept="acceptedFiles"
-					:capture="captureFiles"
 					style="display: none"
 					@change="onFileChange($event.target.files)"
 				/>
