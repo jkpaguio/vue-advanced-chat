@@ -163,6 +163,7 @@
 					type="file"
 					:multiple="multipleFiles ? true : null"
 					:accept="acceptedFiles"
+          v-bind="captureFiles ? { capture: captureFiles } : {}"
 					style="display: none"
 					@change="onFileChange($event.target.files)"
 				/>
